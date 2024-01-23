@@ -1,3 +1,4 @@
+import ListRender from "./components/ListRender"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div>
     <img src="./img1.jpg" alt="Paisagem" />
     </div>
+    <ListRender/>
     </div>
   )
 }
