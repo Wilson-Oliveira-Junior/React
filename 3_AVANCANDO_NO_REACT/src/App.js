@@ -1,5 +1,6 @@
 import ListRender from "./components/ListRender"
 import CarDetails from "./components/CarDetails"
+import Fragment from "./components/Fragment";
 
 
 function App() {
@@ -24,12 +25,18 @@ function App() {
     <CarDetails brand="Fiat" color="Branco" km={4500} newCar={false}/>
     {cars.map((car) => (
       <CarDetails
+      key={car.id}
       brand={car.brand}
       color={car.color}
       km={car.km}
       newCar={car.newCar}/>
       ))}
+
+
+      <Fragment/>
     </div>
+
+    
   );
 }
 
